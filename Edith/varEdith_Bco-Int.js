@@ -24,7 +24,7 @@ dataSet.forEach(dataIntermedio => {
             .click('#tipoReferidor')
             .click(Selector('#tipoReferidor option').withText(dataIntermedio.tipoReferidor))
             .click('#como_nos_conociste')
-            .click(Selector('#como_nos_conociste option').withText('Redes sociales'))
+            .click(Selector('#como_nos_conociste option').withText(dataIntermedio.comoNosConociste))
             .click(Selector('label').withText('¿Cómo te llamas?'))
             .typeText('#nombre', 'prueba')
             .pressKey('tab')
